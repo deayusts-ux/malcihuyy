@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>@curator_dx | Neon Nocturne Portal</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "neon-accent": "#ba9eff",
+              "deep-dark": "#0d0d18",
+              "card-glass": "rgba(24, 24, 38, 0.6)",
+              "surface": "#0d0d18",
+              "on-surface": "#e9e6f7",
+              "on-surface-variant": "#aba9b9",
+              "primary": "#ba9eff",
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {
+              "DEFAULT": "1rem",
+              "lg": "2rem",
+              "xl": "3rem",
+              "full": "9999px"
+            },
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: rgba(24, 24, 38, 0.6);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(186, 158, 255, 0.1);
+        }
+        .neon-glow {
+            box-shadow: 0 0 15px rgba(186, 158, 255, 0.3);
+        }
+        .neon-text-glow {
+            text-shadow: 0 0 8px rgba(186, 158, 255, 0.5);
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body {
+            background-color: #0d0d18;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(186, 158, 255, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(148, 146, 255, 0.05) 0%, transparent 40%);
+        }
+    </style>
+</head>
+<body class="bg-surface font-body text-on-surface selection:bg-neon-accent/30 selection:text-white">
+<!-- TopAppBar Component (from COMPONENTS_5) -->
+<header class="fixed top-0 left-0 w-full z-50 bg-[#0d0d18]/60 backdrop-blur-xl bg-gradient-to-b from-[#181826]/40 to-transparent">
+<div class="flex items-center justify-between px-6 h-20 max-w-2xl mx-auto">
+<div class="flex items-center gap-3 active:scale-95 transition-transform cursor-pointer">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-neon-accent/20">
+<img alt="User profile" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRa68AtCHqLTXlRwo2ifrq9k8SCqiHoZPIJMbsl_ehkZTfQMNeFaQE23nM15hAn7H-rvlbnMra3w7L0ssCJCMQUsJiJ0smXIglTKlAdt8D8hs-eco5AGS3i3el3PdC4EJFSE0piQyNzEjEsQSjezBN7FaxY_1ig9QtWbnrBY6lS97V-aXXxmh6rS8h30GQJr9nyD8PgTP854OZHvZYtn9nFpVUKXqI_mhtJX4kbHvlGfOmrOZER0Rsup4iRRDqAaNaEIUld6rorb8_"/>
+</div>
+<h1 class="text-lg font-black font-['Manrope'] text-[#ba9eff] drop-shadow-[0_0_8px_rgba(186,158,255,0.5)] tracking-tighter">@curator_dx</h1>
+</div>
+<button class="p-2 text-[#ba9eff] hover:text-white transition-all duration-300 active:scale-95">
+<span class="material-symbols-outlined">settings</span>
+</button>
+</div>
+</header>
+<main class="pt-28 pb-40 px-6 max-w-2xl mx-auto min-h-screen">
+<!-- Hero Section -->
+<section class="mb-12 relative">
+<div class="flex flex-col items-start gap-6">
+<div class="relative group">
+<div class="absolute inset-0 bg-neon-accent blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+<div class="w-24 h-24 rounded-2xl overflow-hidden relative border border-neon-accent/30 neon-glow">
+<img alt="Creative Setup" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBuySiWWJruO8NerTSRWSYHq8mkr6z6-OWCqhk1agwBoVQTWo2NhkpWxQ0-E5KMmrK8lZ4mIWnMGKXhVTzitZjaCfzGWWKn2r9DI5SAlkgbikp-b3FOxx3m38Z55G2vuJAhGu9txURDpKN9JujM3_YJiXNJuiEb8INWzzaDnXxagS8hwB7VU01PS-ltc4ALSj9uRTNl-iIMn-n56NHTvzeuq93ggImKPjOHp6BT3i60XiVLj81JQCxCifRyJBqppVPEO4mVqBbLNR79"/>
+</div>
+</div>
+<div class="flex-1">
+<h2 class="font-headline font-extrabold text-4xl text-on-surface tracking-tighter mb-3 neon-text-glow">The Digital Curator</h2>
+<p class="text-on-surface-variant leading-relaxed font-medium text-lg">
+                    Exploring the intersection of technology, aesthetic design, and digital culture. Curating moments for the modern era.
+                </p>
+</div>
+</div>
+</section>
+<!-- Category Chips -->
+<nav class="flex gap-3 mb-10 overflow-x-auto pb-2 no-scrollbar">
+<span class="px-6 py-2 bg-neon-accent text-deep-dark rounded-full text-sm font-extrabold whitespace-nowrap shadow-[0_0_15px_rgba(186,158,255,0.4)]">Latest</span>
+<span class="px-6 py-2 bg-[#181826] text-on-surface-variant border border-neon-accent/10 rounded-full text-sm font-semibold whitespace-nowrap hover:border-neon-accent/40 transition-colors">Design</span>
+<span class="px-6 py-2 bg-[#181826] text-on-surface-variant border border-neon-accent/10 rounded-full text-sm font-semibold whitespace-nowrap hover:border-neon-accent/40 transition-colors">Lifestyle</span>
+<span class="px-6 py-2 bg-[#181826] text-on-surface-variant border border-neon-accent/10 rounded-full text-sm font-semibold whitespace-nowrap hover:border-neon-accent/40 transition-colors">Tech</span>
+</nav>
+<!-- Link Grid -->
+<div class="grid grid-cols-1 gap-5">
+<!-- TikTok -->
+<a class="glass-card rounded-2xl p-6 flex items-center justify-between text-on-surface group transition-all duration-500 hover:scale-[1.02] hover:bg-neon-accent/5 hover:border-neon-accent/30" href="#">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-neon-accent/10 rounded-2xl flex items-center justify-center border border-neon-accent/20 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-neon-accent text-3xl" data-weight="fill">play_circle</span>
+</div>
+<div>
+<span class="block font-headline font-extrabold text-xl tracking-tight group-hover:text-neon-accent transition-colors">TikTok</span>
+<span class="text-on-surface-variant text-sm font-medium">Join the curated journey</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-neon-accent/40 group-hover:text-neon-accent group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<!-- Instagram -->
+<a class="glass-card rounded-2xl p-6 flex items-center justify-between text-on-surface group transition-all duration-500 hover:scale-[1.02] hover:bg-neon-accent/5 hover:border-neon-accent/30" href="#">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-[#9492ff]/10 rounded-2xl flex items-center justify-center border border-[#9492ff]/20 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[#9492ff] text-3xl">photo_camera</span>
+</div>
+<div>
+<span class="block font-headline font-extrabold text-xl tracking-tight group-hover:text-[#9492ff] transition-colors">Instagram</span>
+<span class="text-on-surface-variant text-sm font-medium">Visual storytelling &amp; aesthetics</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#9492ff]/40 group-hover:text-[#9492ff] group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<!-- SociaBuzz -->
+<a class="glass-card rounded-2xl p-6 flex items-center justify-between text-on-surface group transition-all duration-500 hover:scale-[1.02] hover:bg-neon-accent/5 hover:border-neon-accent/30" href="#">
+<div class="flex items-center gap-5">
+<div class="w-14 h-14 bg-[#ef81c4]/10 rounded-2xl flex items-center justify-center border border-[#ef81c4]/20 group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[#ef81c4] text-3xl" data-weight="fill">volunteer_activism</span>
+</div>
+<div>
+<span class="block font-headline font-extrabold text-xl tracking-tight group-hover:text-[#ef81c4] transition-colors">SociaBuzz</span>
+<span class="text-on-surface-variant text-sm font-medium">Support the curation process</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[#ef81c4]/40 group-hover:text-[#ef81c4] group-hover:translate-x-1 transition-all">arrow_forward</span>
+</a>
+<!-- Inspiration Card -->
+<div class="mt-8 bg-[#181826]/40 border border-white/5 rounded-2xl p-8 relative overflow-hidden group">
+<div class="absolute -top-10 -right-10 opacity-5 group-hover:opacity-10 transition-opacity duration-700">
+<span class="material-symbols-outlined text-[12rem] text-neon-accent">auto_awesome</span>
+</div>
+<h3 class="font-headline font-extrabold text-xl mb-4 text-neon-accent flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">sparkles</span>
+                Weekly Inspiration
+            </h3>
+<p class="text-on-surface text-lg leading-relaxed mb-6 font-medium italic">
+                "Design is not just what it looks like and feels like. Design is how it works." 
+            </p>
+<div class="flex items-center gap-2 text-neon-accent font-bold text-sm cursor-pointer group/link">
+<span class="group-hover/link:underline underline-offset-4 transition-all">Read latest newsletter</span>
+<span class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform">open_in_new</span>
+</div>
+</div>
+</div>
+<!-- Footer Component (from COMPONENTS_5) -->
+<footer class="w-full py-12 px-8 flex flex-col items-center gap-6 mt-16 border-t border-[#242434]/30">
+<div class="flex gap-8">
+<a class="font-['Manrope'] text-xs font-medium uppercase tracking-[0.2em] text-[#aba9b9] hover:text-[#ba9eff] transition-colors underline-offset-4 hover:underline" href="#">Privacy</a>
+<a class="font-['Manrope'] text-xs font-medium uppercase tracking-[0.2em] text-[#aba9b9] hover:text-[#ba9eff] transition-colors underline-offset-4 hover:underline" href="#">Terms</a>
+<a class="font-['Manrope'] text-xs font-medium uppercase tracking-[0.2em] text-[#aba9b9] hover:text-[#ba9eff] transition-colors underline-offset-4 hover:underline" href="#">API</a>
+<a class="font-['Manrope'] text-xs font-medium uppercase tracking-[0.2em] text-[#aba9b9] hover:text-[#ba9eff] transition-colors underline-offset-4 hover:underline" href="#">Support</a>
+</div>
+<p class="font-['Manrope'] text-xs font-medium uppercase tracking-[0.2em] text-[#9492ff]">
+            © 2024 Neon Nocturne Portal. All rights reserved.
+        </p>
+</footer>
+</main>
+<!-- BottomNavBar Component (from COMPONENTS_5) -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md rounded-[2rem] border border-[#ba9eff]/10 bg-[#181826]/80 backdrop-blur-2xl shadow-[0_20px_40px_rgba(0,0,0,0.4),0_0_20px_rgba(186,158,255,0.1)] z-50 flex justify-around items-center h-16">
+<!-- Grid -->
+<button class="bg-[#ba9eff]/10 text-[#ba9eff] rounded-full p-3 drop-shadow-[0_0_12px_rgba(186,158,255,0.6)] active:scale-90 duration-200">
+<span class="material-symbols-outlined">grid_view</span>
+</button>
+<!-- Awesome -->
+<button class="text-[#aba9b9] p-3 hover:text-[#9492ff] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined">auto_awesome</span>
+</button>
+<!-- Insights -->
+<button class="text-[#aba9b9] p-3 hover:text-[#9492ff] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined">insights</span>
+</button>
+<!-- Person -->
+<button class="text-[#aba9b9] p-3 hover:text-[#9492ff] transition-colors active:scale-90 duration-200">
+<span class="material-symbols-outlined">person</span>
+</button>
+</nav>
+</body></html>
