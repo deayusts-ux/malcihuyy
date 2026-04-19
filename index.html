@@ -72,14 +72,14 @@
 <body class="bg-surface font-body text-on-surface selection:bg-neon-accent/30 selection:text-white">
 <!-- TopAppBar Component (from COMPONENTS_5) -->
 <header class="fixed top-0 left-0 w-full z-50 bg-[#0d0d18]/60 backdrop-blur-xl bg-gradient-to-b from-[#181826]/40 to-transparent">
-<div class="flex items-center justify-between px-6 h-20 max-w-2xl mx-auto">
-<div class="flex items-center gap-3 active:scale-95 transition-transform cursor-pointer">
-<div class="w-10 h-10 rounded-full overflow-hidden border border-neon-accent/20">
+<div class="flex items-center justify-between px-4 sm:px-6 h-20 max-w-2xl mx-auto gap-2">
+<div class="flex items-center gap-3 active:scale-95 transition-transform cursor-pointer min-w-0">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-neon-accent/20 shrink-0">
 <img alt="User profile" class="w-full h-full object-cover" src="./profile.jpg"/>
 </div>
-<h1 class="text-lg font-black font-['Manrope'] text-[#ba9eff] drop-shadow-[0_0_8px_rgba(186,158,255,0.5)] tracking-tighter">@malcihuy</h1>
+<h1 class="text-base sm:text-lg font-black font-['Manrope'] text-[#ba9eff] drop-shadow-[0_0_8px_rgba(186,158,255,0.5)] tracking-tighter truncate">@malcihuy</h1>
 </div>
-<button class="p-2 text-[#ba9eff] hover:text-white transition-all duration-300 active:scale-95">
+<button class="p-2 text-[#ba9eff] hover:text-white transition-all duration-300 active:scale-95 shrink-0">
 <span class="material-symbols-outlined">settings</span>
 </button>
 </div>
@@ -105,43 +105,43 @@
 <!-- Link Grid -->
 <div class="grid grid-cols-1 gap-5">
 <!-- TikTok -->
-<a class="glass-card rounded-2xl p-6 flex items-center justify-between text-on-surface group transition-all duration-500 hover:scale-[1.02] hover:bg-neon-accent/5 hover:border-neon-accent/30" href="https://www.tiktok.com/@malcihuy?_r=1&_t=ZS-95efyIsOddQ" target="_blank">
-<div class="flex items-center gap-5">
-<div class="w-14 h-14 bg-neon-accent/10 rounded-2xl flex items-center justify-center border border-neon-accent/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-neon-accent text-3xl" data-weight="fill">play_circle</span>
+<a class="glass-card rounded-2xl p-4 sm:p-6 flex items-center justify-between text-on-surface group transition-all duration-500 hover:scale-[1.02] hover:bg-neon-accent/5 hover:border-neon-accent/30" href="https://www.tiktok.com/@malcihuy?_r=1&_t=ZS-95efyIsOddQ" target="_blank">
+<div class="flex items-center gap-3 sm:gap-5 min-w-0 pr-2">
+<div class="w-12 h-12 sm:w-14 sm:h-14 bg-neon-accent/10 rounded-xl sm:rounded-2xl flex items-center justify-center border border-neon-accent/20 group-hover:scale-110 transition-transform duration-500 shrink-0">
+<span class="material-symbols-outlined text-neon-accent text-2xl sm:text-3xl" data-weight="fill">play_circle</span>
 </div>
-<div>
-<span class="block font-headline font-extrabold text-xl tracking-tight group-hover:text-neon-accent transition-colors">TikTok</span>
-<span class="text-on-surface-variant text-sm font-medium">Join the curated journey</span>
+<div class="min-w-0">
+<span class="block font-headline font-extrabold text-lg sm:text-xl tracking-tight group-hover:text-neon-accent transition-colors truncate">TikTok</span>
+<span class="text-on-surface-variant text-xs sm:text-sm font-medium block truncate">Join the curated journey</span>
 </div>
 </div>
-<span class="material-symbols-outlined text-neon-accent/40 group-hover:text-neon-accent group-hover:translate-x-1 transition-all">arrow_forward</span>
+<span class="material-symbols-outlined text-neon-accent/40 group-hover:text-neon-accent group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
 </a>
 <!-- Instagram -->
-<a class="glass-card rounded-2xl p-6 flex items-center justify-between text-on-surface group transition-all duration-500 hover:scale-[1.02] hover:bg-neon-accent/5 hover:border-neon-accent/30" href="https://www.instagram.com/malfz_im?igsh=b3JoaDVpY2lpcGVt" target="_blank">
-<div class="flex items-center gap-5">
-<div class="w-14 h-14 bg-[#9492ff]/10 rounded-2xl flex items-center justify-center border border-[#9492ff]/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-[#9492ff] text-3xl">photo_camera</span>
+<a class="glass-card rounded-2xl p-4 sm:p-6 flex items-center justify-between text-on-surface group transition-all duration-500 hover:scale-[1.02] hover:bg-neon-accent/5 hover:border-neon-accent/30" href="https://www.instagram.com/malfz_im?igsh=b3JoaDVpY2lpcGVt" target="_blank">
+<div class="flex items-center gap-3 sm:gap-5 min-w-0 pr-2">
+<div class="w-12 h-12 sm:w-14 sm:h-14 bg-[#9492ff]/10 rounded-xl sm:rounded-2xl flex items-center justify-center border border-[#9492ff]/20 group-hover:scale-110 transition-transform duration-500 shrink-0">
+<span class="material-symbols-outlined text-[#9492ff] text-2xl sm:text-3xl">photo_camera</span>
 </div>
-<div>
-<span class="block font-headline font-extrabold text-xl tracking-tight group-hover:text-[#9492ff] transition-colors">Instagram</span>
-<span class="text-on-surface-variant text-sm font-medium">Visual storytelling &amp; aesthetics</span>
+<div class="min-w-0">
+<span class="block font-headline font-extrabold text-lg sm:text-xl tracking-tight group-hover:text-[#9492ff] transition-colors truncate">Instagram</span>
+<span class="text-on-surface-variant text-xs sm:text-sm font-medium block truncate">Visual storytelling &amp; aesthetics</span>
 </div>
 </div>
-<span class="material-symbols-outlined text-[#9492ff]/40 group-hover:text-[#9492ff] group-hover:translate-x-1 transition-all">arrow_forward</span>
+<span class="material-symbols-outlined text-[#9492ff]/40 group-hover:text-[#9492ff] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
 </a>
 <!-- SociaBuzz -->
-<a class="glass-card rounded-2xl p-6 flex items-center justify-between text-on-surface group transition-all duration-500 hover:scale-[1.02] hover:bg-neon-accent/5 hover:border-neon-accent/30" href="https://sociabuzz.com/malcihuyyy" target="_blank">
-<div class="flex items-center gap-5">
-<div class="w-14 h-14 bg-[#ef81c4]/10 rounded-2xl flex items-center justify-center border border-[#ef81c4]/20 group-hover:scale-110 transition-transform duration-500">
-<span class="material-symbols-outlined text-[#ef81c4] text-3xl" data-weight="fill">volunteer_activism</span>
+<a class="glass-card rounded-2xl p-4 sm:p-6 flex items-center justify-between text-on-surface group transition-all duration-500 hover:scale-[1.02] hover:bg-neon-accent/5 hover:border-neon-accent/30" href="https://sociabuzz.com/malcihuyyy" target="_blank">
+<div class="flex items-center gap-3 sm:gap-5 min-w-0 pr-2">
+<div class="w-12 h-12 sm:w-14 sm:h-14 bg-[#ef81c4]/10 rounded-xl sm:rounded-2xl flex items-center justify-center border border-[#ef81c4]/20 group-hover:scale-110 transition-transform duration-500 shrink-0">
+<span class="material-symbols-outlined text-[#ef81c4] text-2xl sm:text-3xl" data-weight="fill">volunteer_activism</span>
 </div>
-<div>
-<span class="block font-headline font-extrabold text-xl tracking-tight group-hover:text-[#ef81c4] transition-colors">SociaBuzz</span>
-<span class="text-on-surface-variant text-sm font-medium">Support the curation process</span>
+<div class="min-w-0">
+<span class="block font-headline font-extrabold text-lg sm:text-xl tracking-tight group-hover:text-[#ef81c4] transition-colors truncate">SociaBuzz</span>
+<span class="text-on-surface-variant text-xs sm:text-sm font-medium block truncate">Support the curation process</span>
 </div>
 </div>
-<span class="material-symbols-outlined text-[#ef81c4]/40 group-hover:text-[#ef81c4] group-hover:translate-x-1 transition-all">arrow_forward</span>
+<span class="material-symbols-outlined text-[#ef81c4]/40 group-hover:text-[#ef81c4] group-hover:translate-x-1 transition-all shrink-0">arrow_forward</span>
 </a>
 
 </div>
